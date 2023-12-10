@@ -8,3 +8,6 @@ This is a fork of the CarterLabs Telegram API, I am currently working on allowin
 - [ ] Create a replit repository
 - [ ] Change the readme file
 - [ ] Archive the project
+
+# Documentation
+HA! No, I don't even know how this works

@@ -2,9 +2,9 @@ from flask import Flask, request, jsonify
 import requests
 import json
 
-SERVER_URL = "YOUR SERVER'S PUBLIC URL (Must be HTTPS)"
+SERVER_URL = "YOUR SERVER'S PUBLIC URL (Must be HTTPS)" # Not quite sure what this does, hope it isnt important...
 TOKEN = "YOUR TELEGRAM BOT TOKEN"
-CARTER_AGENT_KEY = "YOUR CARTER API KEY"
+EUREKA_AGENT_KEY = "YOUR Eureka API KEY"
 app = Flask(__name__)
 
 
@@ -46,14 +46,14 @@ def set_is_typing(chat_id, is_typing, telegram_key):
   return response.json()
 
 
-def get_carter_response(input_text, user_id):
-  """Fetches a response from the Carter Labs API."""
+def get_eureka_response(input_text, user_id):
+  """Fetches a response from the Eureka API."""
   response = requests.post(
-      "https://api.carterlabs.ai/chat",
+      "https://api.eureka-ai.dev/chat",
       headers={"Content-Type": "application/json"},
       data=json.dumps({
           "text": input_text,
-          "key": CARTER_AGENT_KEY,
+          "key": EUREKA_AGENT_KEY,
           "user_id": user_id,
           "context": "THIS CONVERSATION IS ON TELEGRAM",
       }),
@@ -77,7 +77,7 @@ def handle_message():
     if text is None:
       return jsonify({"success": False, "error": "Missing input content"})
 
-    response = get_carter_response(text, user_id)
+    response = get_eureka_response(text, user_id)
     response = send_message(user_id, response, TOKEN)
     return jsonify(response)
 
