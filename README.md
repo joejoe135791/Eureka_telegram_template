@@ -1,6 +1,6 @@
 # telegram-template
 
-This is a fork of the CarterLabs Telegram API, I am currently working on allowing it it be used with eureka AI, after I complete everything required for it to run, **this project will not be maintained** after everything on the to-do list in completed
+This is a fork of the [CarterLabs Telegram template](https://github.com/Carter-Labs-Ltd/telegram-template), I am currently working on allowing it it be used with eureka AI, after I complete everything required for it to run, **this project will not be maintained** after everything on the to-do list in completed
 
 # To-do list
 - [ ] Change api URLs to Eureka
