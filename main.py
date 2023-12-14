@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import requests
 import json
 
-SERVER_URL = "YOUR SERVER'S PUBLIC URL (Must be HTTPS)" # Not quite sure what this does, hope it isnt important...
+SERVER_URL = "YOUR SERVER'S PUBLIC URL (Must be HTTPS)" #Not quite sure what this does, hope it isnt important...
 TOKEN = "YOUR TELEGRAM BOT TOKEN"
 EUREKA_AGENT_KEY = "YOUR Eureka API KEY"
 app = Flask(__name__)
@@ -88,5 +88,5 @@ def index():
 
 
 if __name__ == "__main__":
-  set_webhook(SERVER_URL + "/on-message", TOKEN)
+  #set_webhook(SERVER_URL + "/on-message", TOKEN)
   app.run(threaded=True, port=5123, host="0.0.0.0")
