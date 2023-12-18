@@ -8,10 +8,13 @@ This is a fork of the [CarterLabs Telegram template](https://github.com/Carter-L
 
 # To-do list
 - [ ] Change api URLs to Eureka
-- [ ] Ensure every fewture is working and add an start file (.sh and .bat)
+- [ ] Ensure every feature is working and add an start file (.sh and .bat)
 - [ ] Create a replit repository
 - [ ] Change the readme file
 - [ ] Archive the project
 
 # Documentation
 HA! No, I don't even know how this works
+
+# License
+This project is licened under the [MIT License](License)
