@@ -88,5 +88,5 @@ def index():
 
 
 if __name__ == "__main__":
-  #set_webhook(SERVER_URL + "/on-message", TOKEN)
+  set_webhook(SERVER_URL + "/on-message", TOKEN)
   app.run(threaded=True, port=5123, host="0.0.0.0")
