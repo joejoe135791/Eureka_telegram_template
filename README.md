@@ -5,6 +5,7 @@ This is a fork of the [CarterLabs Telegram template](https://github.com/Carter-L
 # Prerequisites
 - you will need a [telegram bot](https://core.telegram.org/api)
 - a eureka account and bot (currently in closed beta)
+- [EurekaPy](https://github.com/Eureka-API/EurekaPy)
 
 # To-do list
 - [ ] Change api URLs to Eureka
